@@ -36,3 +36,14 @@ def is_valid_phone_number(phone):
 print(is_valid_phone_number("1234567890"))
 print(is_valid_phone_number("+441234567890"))
 
+#q: how do i capture input from the screen
+#A: Use the input() function
+#write me code to cpature a single line of input from the screen and print it back out
+print(input("Enter a line of text: "))
+
+
+#write me a reg ext to validate a phone number in nigeira
+def is_valid_phone_number(phone):
+    return re.match(r"^\+?234\d{10}$", phone)
+
+
